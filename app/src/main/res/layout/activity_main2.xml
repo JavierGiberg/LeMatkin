@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/txt"
+        android:layout_margin="15dp">
+
+        <TextView
+            android:id="@+id/txt_date1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="שורה 1"
+            android:textSize="25dp"
+            android:textColor="@color/color3"
+            android:gravity="end"
+            android:layout_marginEnd="5dp"/>
+        <TextView
+            android:id="@+id/txt_money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="שורה 2"
+            android:textSize="25dp"
+            android:textColor="@color/color3"
+            android:layout_marginStart="5dp"/>
+        <TextView
+            android:id="@+id/txt_special"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="שורה 3"
+            android:textSize="25dp"
+            android:textColor="@color/color3"
+            android:layout_marginStart="5dp"/>
+        <TextView
+            android:id="@+id/txt_mam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="שורה 4"
+            android:textSize="25dp"
+            android:textColor="@color/color3"
+            android:layout_marginStart="5dp"/>
+        <TextView
+            android:id="@+id/txt_Rf_total"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="שורה 5"
+            android:textSize="25dp"
+            android:textColor="@color/color3"
+            android:layout_marginStart="5dp"/>
+        <TextView
+            android:id="@+id/txt_percent_new"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="שורה 6"
+            android:textSize="25dp"
+            android:textColor="@color/color3"
+            android:layout_marginStart="5dp"/>
+        <TextView
+            android:id="@+id/txt_percent_ch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="שורה 7"
+            android:textSize="25dp"
+            android:textColor="@color/color3"
+            android:layout_marginStart="5dp"/>
+        <TextView
+            android:id="@+id/txt_percent_total"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="שורה 8"
+            android:textSize="25dp"
+            android:textColor="@color/color3"
+            android:layout_marginStart="5dp"/>
+        <TextView
+            android:id="@+id/txt_total_use"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="שורה 9"
+            android:textSize="25dp"
+            android:textColor="@color/color3"
+            android:layout_marginStart="5dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:gravity="center">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ביצוע פעולות"
+            android:gravity="center"
+            android:textStyle="italic"
+            android:textSize="30dp"
+            android:textColor="@color/color_Gray"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_new_paka"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="80"
+                android:layout_margin="5dp"
+                android:background="@drawable/line"
+                android:text="חשב פקע"
+                android:textColor="@color/color_black" />
+
+            <Button
+                android:id="@+id/btn_buy"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="20"
+                android:background="@drawable/line"
+                android:text=" ביצוע קניה ציוד שחור "
+                android:textColor="#000"
+                android:layout_margin="5dp"/>
+        </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_weight="80"/>
+
+
+    <Button
+            android:id="@+id/btn_aqvarium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:layout_gravity="end"
+            android:layout_margin="5dp"
+            android:background="@drawable/line"
+            android:text="אקווריום"
+            android:textColor="#000" />
+
+</LinearLayout>
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-1073128512622518/1370952766">
+        </com.google.android.gms.ads.AdView>
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="15dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="חיוג מהיר"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="italic"
+            android:textSize="30dp"
+            android:textColor="@color/color_Gray"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_call_mashlat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="20"
+                android:background="@drawable/line"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="משל'ט"
+                android:textColor="@color/color_black" />
+
+            <Button
+                android:id="@+id/btn_call_matat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="20"
+                android:background="@drawable/line"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="מט'ת"
+                android:textColor="@color/color_black" />
+            <Button
+                android:id="@+id/btn_mavar_dira"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="20"
+                android:background="@drawable/line"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="מעברי דירה"
+                android:textColor="@color/color_black" />
+            <Button
+                android:id="@+id/btn_atzalot"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="20"
+                android:background="@drawable/line"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="הצלות"
+                android:textColor="@color/color_black" />
+            <Button
+                android:id="@+id/btn_call_vip"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="20"
+                android:background="@drawable/line"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="VIP"
+                android:textColor="@color/color_black" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-1073128512622518/1370952766">
+        </com.google.android.gms.ads.AdView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="80"/>
+        <Button
+            android:id="@+id/btn_cleer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:layout_margin="5dp"
+            android:background="@drawable/line"
+            android:gravity="center"
+            android:text=" התחל חודש מחדש " />
+    </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>

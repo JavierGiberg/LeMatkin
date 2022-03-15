@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+
+    android:layout_gravity="center"
+
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <TextView
+        android:layout_width="280dp"
+        android:layout_height="60dp"
+        android:text="לחיצה על אישור מאפס את כל החשבון"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:inputType="number"
+        />
+    <Button
+        android:id="@+id/btn_delete_all"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:background="@drawable/line"
+        android:text="אישור"
+        android:layout_marginBottom="10dp"/>
+
+</LinearLayout>
